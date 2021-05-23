@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* The Modal (background) */
+        
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+        /* Modal Content */
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 60%;
+        }
+        /* The Close Button */
+        
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        
+        .contact-us {
+            flex-basis: 40%;
+            margin: 30px;
+            padding-top: 100px;
+            width: 80%;
+            margin: auto;
+        }
+        
+        .contact-col {
+            flex-basis: 48%;
+            margin-bottom: 30px;
+        }
+        
+        .div11 {
+            width: 100%;
+            margin-top: 50px;
+        }
+    </style>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/index.html">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+</head>
+
+<body>
+    <div class="container" style="text-align: center; margin-top: 30px; ">
+        <h1 style="letter-spacing: 3px;">Vaccent Bed Available</h1>
+    </div>
+    <div class="container" style="width:60%; margin-top: 30px;">
+
+        <form style="border: 1px solid black; padding: 20px;">
+            <div class="form-group">
+
+                <label for="sel1">State</label>
+
+                <select class="form-control" id="sel0">
+                            <option id="anp" value="Andhra Pradesh">Andhra Pradesh</option>
+                            
+                            <option id="arp" value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option id="ass" value="Assam">Assam</option>
+                            
+                            <option id="cha" value="Chandigarh">Chandigarh</option>
+                            
+                            <option id="del" value="Delhi">Delhi</option>
+                            
+                            <option id="go" value="Goa">Goa</option>
+                            <option id="guj" value="Gujarat">Gujarat</option>
+                            <option id="har" value="Haryana">Haryana</option>
+                            
+                            <option id="jk" value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            
+                            <option id="ker" value="Kerala">Kerala</option>
+                            <option id="map" value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option id="maha" value="Maharashtra">Maharashtra</option>
+                            
+                            
+                            <option id="raj" value="Rajasthan">Rajasthan</option>
+                            
+                            <option id="up" value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option id="utt" value="Uttarakhand">Uttarakhand</option>
+                    </select>
+                <label for="sel1">District</label>
+                <select class="form-control" style="display:block;" id="sel1">
+                  <option>Anantpur</option>
+                  <option>Chittoor</option>
+                  <option>East Godavari</option>
+                  <option>Guntur</option>
+                  <option>Kadapa</option>
+                  <option>Krishna</option>
+                  <option>Kurnool</option>
+                  <option>Prakasam</option>
+                  <option>Nellore</option>
+                  <option>Srikakulam</option>
+                  <option>Vishakhapatnam</option>
+                  <option>Vizianagaram</option>
+                  <option>West Godavari</option>
+                </select>
+                <select class="form-control" id="sel2" style="display:none;">
+                  <option>Anjaw</option>
+                  <option>Changlang</option>
+                  <option>Dibang Valley</option>
+                  <option>East Kameng</option>
+                  <option>East Siang</option>
+                  <option>Kra Daadi</option>
+                  <option>Kurung Kumey</option>
+                  <option>Lohit</option>
+                  <option>Longding</option>
+                  <option>Lower DIbang Valley</option>
+                  <option>Lower Subansiri</option>
+                  <option>Namsai</option>
+                  <option>Papum Pare</option>
+                  <option>Siang</option>
+                  <option>Tawang</option>
+                  <option>Tirap</option>
+                  <option>Upper Siang</option>
+                  <option>Upper Sibansiri</option>
+                  <option>West Kameng</option>
+                  <option>West Siang</option>
+                  <option>Itanagar</option>
+                </select>
+                <select class="form-control" id="sel3" style="display:none;">
+    
+                  <option>Baksa</option>
+                  <option>Barpeta</option>
+                  <option>Biswanath</option>
+                  <option>Bongaigaon</option>
+                  <option>Cachar</option>
+                  <option>Charaideo</option>
+                  <option>Chirang</option>
+                  <option>Darrang</option>
+                  <option>Dhemaji</option>
+                  <option>Dhubri</option>
+                  <option>Dibrugarh</option>
+                  <option>Goalpara</option>
+                  <option>Golaghat</option>
+                  <option>Hailakandi</option>
+                  <option>Hojai</option>
+                  <option>Jorhat</option>
+                  <option>Kamrup Metropolitan</option>
+                  <option>Kamrup(Rural)</option>
+                  <option>Karbi Anglong</option>
+                  <option>Karimganj</option>
+                  <option>Kokrajhar</option>
+                  <option>Lakhimpur</option>
+                  <option>Majuli</option>
+                  <option>Morigaon</option>
+                  <option>Nagaon</option>
+                  <option>Nalbari</option>
+                  <option>Dima Hasao</option>
+                  <option>Sivasagar</option>
+                  <option>Sonitpur</option>
+                  <option>South Salmara Malkachar</option>
+                  <option>Tinsukia</option>
+                  <option>Udalguri</option>
+                  <option>West Karbi Anglong</option>
+                </select>
+                <select class="form-control" style="display:none;" id="sel4">
+                    <option>Chandigarh</option>
+                  </select>
+                <select class="form-control" id="sel5" style="display:none;">
+                    <option>Central Delhi</option>
+                    <option>East Delhi</option>
+                    <option>New Delhi</option>
+                    <option>North Delhi</option>
+                    <option>North East Delhi</option>
+                    <option>North West Delhi</option>
+                    <option>Shahdara</option>
+                    <option>South Delhi</option>
+                    <option>South East Delhi</option>
+                    <option>South West Delhi</option>
+                    <option>West Delhi</option>
+                  </select>
+                <select class="form-control" id="sel6" style="display:none;">
+      
+                    <option>North Goa</option>
+                    <option>South Goa</option>
+                  </select>
+                <select class="form-control" style="display:none;" id="sel7">
+                    <option>Ahemdabad</option>
+                    <option>Amreli</option>
+                    <option>Anand</option>
+                    <option>Aravalli</option>
+                    <option>Banaskantha</option>
+                    <option>Bharuch</option>
+                    <option>Bhavnagar</option>
+                    <option>Botad</option>
+                    <option>Chhota Udaipur</option>
+                    <option>Dahod</option>
+                    <option>Dang</option>
+                    <option>Devbhoomi Dwarka</option>
+                    <option>Gandhinagar</option>
+                    <option>Gir Somnath</option>
+                    <option>Jamnagar</option>
+                    <option>Juangadh</option>
+                    <option>Kheda</option>
+                    <option>Kutch</option>
+                    <option>Mahisagar</option>
+                    <option>Mehsana</option>
+                    <option>Morbi</option>
+                    <option>Narmada</option>
+                    <option>Navsari</option>
+                    <option>Panchmahal</option>
+                    <option>Patan</option>
+                    <option>Porbandar</option>
+                    <option>Rajkot</option>
+                    <option>Sabarkantha</option>
+                    <option>Surat</option>
+                    <option>Surendranagar</option>
+                    <option>Tapi</option>
+                    <option>Vadodara</option>
+                    <option>Valsad</option>
+                  </select>
+                <select class="form-control" id="sel8" style="display:none;">
+                    <option>Ambala</option>
+                    <option>Bhiwani</option>
+                    <option>Charkhi Dadri</option>
+                    <option>Faridabad</option>
+                    <option>Fatehabad</option>
+                    <option>Gurugram</option>
+                    <option>Hisar</option>
+                    <option>Jhajjar</option>
+                    <option>Jind</option>
+                    <option>Kaithal</option>
+                    <option>Karnal</option>
+                    <option>Kurukshetra</option>
+                    <option>Mahendragarh</option>
+                    <option>Mewat</option>
+                    <option>Palwal</option>
+                    <option>Panchkula</option>
+                    <option>Panipat</option>
+                    <option>Rewari</option>
+                    <option>Rohtak</option>
+                    <option>Sirsa</option>
+                    <option>Sonipat</option>
+                    <option>Yamunanagar</option>
+                  </select>
+                <select class="form-control" id="sel9" style="display:none;">
+      
+                    <option>Anantnag</option>
+                    <option>Bandipora</option>
+                    <option>Baramulla</option>
+                    <option>Budgam</option>
+                    <option>Doda</option>
+                    <option>Ganderbal</option>
+                    <option>Jammu</option>
+                    <option>Kargil</option>
+                    <option>Leh</option>
+                    <option>Poonch</option>
+                    <option>Pulwama</option>
+                    <option>Rajouri</option>
+                    <option>Ramban</option>
+                    <option>Reasi</option>
+                    <option>Samba</option>
+                    <option>Shopian</option>
+                    <option>Srinagar</option>
+                    <option>Udhampur</option>
+                  </select>
+                <select class="form-control" style="display:none;" id="sel10">
+                    <option>Alappuzha</option>
+                    <option>Ernakulam</option>
+                    <option>Idukki</option>
+                    <option>Kannur</option>
+                    <option>Kasaragod</option>
+                    <option>Kollam</option>
+                    <option>Kottayam</option>
+                    <option>Kozhikode</option>
+                    <option>malappuram</option>
+                    <option>Palakkad</option>
+                    <option>pathanamthitta</option>
+                    <option>Thrivananthapuram</option>
+                    <option>Thrissur</option>
+                    <option>Wayanad</option>
+                  </select>
+                <select class="form-control" id="sel11" style="display:none;">
+                    <option>Agar Malwa</option>
+                    <option>Alirajpur</option>
+                    <option>Anuppur</option>
+                    <option>Ashoknagar</option>
+                    <option>Balaghat</option>
+                    <option>Barwani</option>
+                    <option>Betul</option>
+                    <option>Bhind</option>
+                    <option>Bhopal</option>
+                    <option>Burhanpur</option>
+                    <option>chhatarpur</option>
+                    <option>Chhindwara</option>
+                    <option>Damoh</option>
+                    <option>Datia</option>
+                    <option>Dewas</option>
+                    <option>Dhar</option>
+                    <option>Dindori</option>
+                    <option>Guna</option>
+                    <option>Gwalior</option>
+                    <option>Harda</option>
+                    <option>Hoshangabad</option>
+                    <option>Indore</option>
+                    <option>Jabalpur</option>
+                    <option>Jhabua</option>
+                    <option>Katni</option>
+                    <option>Khandwa</option>
+                    <option>Khargone</option>
+                    <option>Mandla</option>
+                    <option>Mandsaur</option>
+                    <option>Morena</option>
+                    <option>Narsinghpur</option>
+                    <option>Neemuch</option>
+                    <option>Panna</option>
+                    <option>Raisen</option>
+                    <option>Rajgarh</option>
+                    <option>Ratlam</option>
+                    <option>Rewa</option>
+                    <option>Sagar</option>
+                    <option>Sehore</option>
+                    <option>Seoni</option>
+                    <option>Shahdol</option>
+                    <option>Shajapur</option>
+                    <option>Sheopur</option>
+                    <option>Shivpuri</option>
+                    <option>Sidhi</option>
+                    <option>Singrauli</option>
+                    <option>Tikamgarh</option>
+                    <option>Ujjain</option>
+                    <option>Umaria</option>
+                    <option>Vidisha</option>
+                  </select>
+                <select class="form-control" id="sel12" style="display:none;">
+      
+                    <option>Ahmednagar</option>
+                    <option>Akola</option>
+                    <option>Amravati</option>
+                    <option>Aurangabad</option>
+                    <option>Beed</option>
+                    <option>Bhandara</option>
+                    <option>Buldhana</option>
+                    <option>Chandrapur</option>
+                    <option>Dhule</option>
+                    <option>Gadchiroli</option>
+                    <option>Gondia</option>
+                    <option>Hingoli</option>
+                    <option>Jalgaon</option>
+                    <option>Jalna</option>
+                    <option>Kohlapur</option>
+                    <option>Latur</option>
+                    <option>Mumbai City</option>
+                    <option>Mumbai Suburban</option>
+                    <option>Nagpur</option>
+                    <option>Nanded</option>
+                    <option>Nandurbar</option>
+                    <option>Nashik</option>
+                    <option>Osmanabad</option>
+                    <option>Palghar</option>
+                    <option>Parbhani</option>
+                    <option>Pune</option>
+                    <option>Raigad</option>
+                    <option>Ratnagiri</option>
+                    <option>Sangli</option>
+                    <option>Satara</option>
+                    <option>Sindhudurg</option>
+                    <option>Solapur</option>
+                    <option>Thane</option>
+                    <option>Wardha</option>
+                    <option>Washim</option>
+                    <option>Yavatmal</option>
+                  </select>
+                <select class="form-control" id="sel13" style="display:none;">
+      
+                    <option>Ajmer</option>
+                    <option>Alwar</option>
+                    <option>Banswara</option>
+                    <option>Baran</option>
+                    <option>Barmer</option>
+                    <option>Bharatpur</option>
+                    <option>Bhilwara</option>
+                    <option>Bikaner</option>
+                    <option>Bundi</option>
+                    <option>Chittorgarh</option>
+                    <option>Churu</option>
+                    <option>Dausa</option>
+                    <option>Dholpur</option>
+                    <option>Dungarpur</option>
+                    <option>Ganganagar</option>
+                    <option>Hanumangarh</option>
+                    <option>Jaipur</option>
+                    <option>Jaisalmer</option>
+                    <option>Jalore</option>
+                    <option>Jhalawar</option>
+                    <option>Jhunjhunu</option>
+                    <option>Jodhpur</option>
+                    <option>Karauli</option>
+                    <option>Kota</option>
+                    <option>Nagaur</option>
+                    <option>Pali</option>
+                    <option>Pratapgarh</option>
+                    <option>Rajsamand</option>
+                    <option>Sawai madhopur</option>
+                    <option>Sikar</option>
+                    <option>Sirohi</option>
+                    <option>Tonk</option>
+                    <option>Udaipur</option>
+                  </select>
+                <select class="form-control" id="sel14" style="display:none;">
+      
+                    <option>Agra</option>
+                    <option>Aligarh</option>
+                    <option>Allahabad</option>
+                    <option>Ambedkar Nagar</option>
+                    <option>Amethi</option>
+                    <option>Amrocha</option>
+                    <option>Auraiya</option>
+                    <option>Azamgarh</option>
+                    <option>Baghpat</option>
+                    <option>Bahraich</option>
+                    <option>Ballia</option>
+                    <option>Balrampur</option>
+                    <option>Banda</option>
+                    <option>Barabanki</option>
+                    <option>Bareilly</option>
+                    <option>Basti</option>
+                    <option>Bhadohi</option>
+                    <option>Bijnor</option>
+                    <option>budaun</option>
+                    <option>Bulandshahar</option>
+                    <option>Chandauli</option>
+                    <option>Chitrakoot</option>
+                    <option>Deoria</option>
+                    <option>Etah</option>
+                    <option>Etawah</option>
+                    <option>Faizabad</option>
+                    <option>Farrukhbad</option>
+                    <option>Fatehpur</option>
+                    <option>Firozabad</option>
+                    <option>Fatehpur</option>
+                    <option>Firozabad</option>
+                    <option>Gautam Budhha Nagar</option>
+                    <option>Ghaziabad</option>
+                    <option>Ghazipur</option>
+                    <option>Gonda</option>
+                    <option>Gorakhpur</option>
+                    <option>Hamirpur</option>
+                    <option>Hapur</option>
+                    <option>Hardoi</option>
+                    <option>Hathras</option>
+                    <option>Jalaun</option>
+                    <option>Jaunpur</option>
+                    <option>Jhansi</option>
+                    <option>Kannauj</option>
+                    <option>Kanpur Dehat</option>
+                    <option>Kanpur Nagar</option>
+                    <option>Kasganj</option>
+                    <option>Kaushambi</option>
+                    <option>Kheri</option>
+                    <option>Kushinagar</option>
+                    <option>Lalitpur</option>
+                    <option>Lucknow</option>
+                    <option>Maharajganj</option>
+                    <option>Mahoba</option>
+                    <option>Mainpuri</option>
+                    <option>Mathura</option>
+                    <option>Mau</option>
+                    <option>Meerut</option>
+                    <option>Mirzapur</option>
+                    <option>Moradabad</option>
+                    <option>Muzaffarnagar</option>
+                    <option>Pilibhit</option>
+                    <option>Pratapgarh</option>
+                    <option>Raebaeli</option>
+                    <option>Rampur</option>
+                    <option>Saharanpur</option>
+                    <option>Sambhal</option>
+                    <option>Sant Kabir Nagar</option>
+                    <option>Shahajanpur</option>
+                    <option>Shamli</option>
+                    <option>Shravasti</option>
+                    <option>Siddhathnagar</option>
+                    <option>sitapur</option>
+                    <option>sonbhadra</option>
+                    <option>Sultanpur</option>
+                    <option>Unnao</option>
+                    <option>Varanasi</option>
+                  </select>
+                <select class="form-control" id="sel15" style="display:none;">
+      
+                    <option>Almora</option>
+                    <option>Bageshwar</option>
+                    <option>Chamoli</option>
+                    <option>Champawat</option>
+                    <option>Dehradun</option>
+                    <option>Haridwar</option>
+                    <option>Nainital</option>
+                    <option>Pauri</option>
+                    <option>Pithoragarh</option>
+                    <option>Rudraprayag</option>
+                    <option>Tehri</option>
+                    <option>Udham Singh Nagar</option>
+                    <option>Uttarkashi</option>
+                  </select>
+
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <div style="" class="div11">
+            <table id="tab">
+                <tr>
+                    <th>Sr No.</th>
+                    <th> Hospital/Center Name</th>
+                    <th> Normal Bed</th>
+                    <th> Vacant Bed</th>
+                    <th> Oxygen Bed</th>
+                    <th>ICU Bed</th>
+                    <th>State</th>
+                    <th>District</th>
+
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td id="nm1"></td>
+                    <td id="ag1"></td>
+                    <td id="gn1"></td>
+                    <td id="bd1"></td>
+                    <td id="pn1"></td>
+                    <td id="st1"></td>
+                    <td id="ds1"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td id="nm2"></td>
+                    <td id="ag2"></td>
+                    <td id="gn2"></td>
+                    <td id="bd2"></td>
+                    <td id="pn2"></td>
+                    <td id="st2"></td>
+                    <td id="ds2"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td id="nm3"></td>
+                    <td id="ag3"></td>
+                    <td id="gn3"></td>
+                    <td id="bd3"></td>
+                    <td id="pn3"></td>
+                    <td id="st3"></td>
+                    <td id="ds3"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td id="nm4"></td>
+                    <td id="ag4"></td>
+                    <td id="gn4"></td>
+                    <td id="bd4"></td>
+                    <td id="pn4"></td>
+                    <td id="st4"></td>
+                    <td id="ds4"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td id="nm5"></td>
+                    <td id="ag5"></td>
+                    <td id="gn5"></td>
+                    <td id="bd5"></td>
+                    <td id="pn5"></td>
+                    <td id="st5"></td>
+                    <td id="ds5"></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td id="nm6"></td>
+                    <td id="ag6"></td>
+                    <td id="gn6"></td>
+                    <td id="bd6"></td>
+                    <td id="pn6"></td>
+                    <td id="st6"></td>
+                    <td id="ds6"></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td id="nm7"></td>
+                    <td id="ag7"></td>
+                    <td id="gn7"></td>
+                    <td id="bd7"></td>
+                    <td id="pn7"></td>
+                    <td id="st7"></td>
+                    <td id="ds7"></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td id="nm8"></td>
+                    <td id="ag8"></td>
+                    <td id="gn8"></td>
+                    <td id="bd8"></td>
+                    <td id="pn8"></td>
+                    <td id="st8"></td>
+                    <td id="ds8"></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td id="nm9"></td>
+                    <td id="ag9"></td>
+                    <td id="gn9"></td>
+                    <td id="bd9"></td>
+                    <td id="pn9"></td>
+                    <td id="st9"></td>
+                    <td id="ds9"></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td id="nm10"></td>
+                    <td id="ag10"></td>
+                    <td id="gn10"></td>
+                    <td id="bd10"></td>
+                    <td id="pn10"></td>
+                    <td id="st10"></td>
+                    <td id="ds10"></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td id="nm11"></td>
+                    <td id="ag11"></td>
+                    <td id="gn11"></td>
+                    <td id="bd11"></td>
+                    <td id="pn11"></td>
+                    <td id="st11"></td>
+                    <td id="ds11"></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+    <hr class="hr1" style="border-color: rgb(43, 39, 39); margin: 2rem 0px; width: 80%; background-color: blue; margin-left: 159px;">
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>This website is made for needy person who need some sources like <br>Blood,Plasma,Oxygen etc</p>
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <a href="http://www.instagram.com/aamir.sohail__"><i class="fa fa-instagram"></i></a>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Powered <i class="fa fa-heart"></i> by Web Moguls</p>
+    </section>
+    <script>
+        var count = 0;
+
+        function hideAll() {
+            document.getElementById("sel1").style.display = "none";
+            document.getElementById("sel2").style.display = "none";
+            document.getElementById("sel3").style.display = "none";
+            document.getElementById("sel4").style.display = "none";
+            document.getElementById("sel5").style.display = "none";
+            document.getElementById("sel6").style.display = "none";
+            document.getElementById("sel7").style.display = "none";
+            document.getElementById("sel8").style.display = "none";
+            document.getElementById("sel9").style.display = "none";
+            document.getElementById("sel10").style.display = "none";
+            document.getElementById("sel11").style.display = "none";
+            document.getElementById("sel12").style.display = "none";
+            document.getElementById("sel13").style.display = "none";
+            document.getElementById("sel14").style.display = "none";
+            document.getElementById("sel15").style.display = "none";
+
+        }
+        document.getElementById("sel0").onchange = function() {
+
+            hideAll();
+            if (this.value == "Andhra Pradesh")
+
+            {
+                document.getElementById("sel1").style.display = "block";
+            }
+            if (this.value == "Arunachal Pradesh")
+
+            {
+                document.getElementById("sel2").style.display = "block";
+            }
+            if (this.value == "Assam")
+
+            {
+                document.getElementById("sel3").style.display = "block";
+            }
+            if (this.value == "Chandigarh")
+
+            {
+                document.getElementById("sel4").style.display = "block";
+            }
+            if (this.value == "Delhi")
+
+            {
+                document.getElementById("sel5").style.display = "block";
+            }
+            if (this.value == "Goa")
+
+            {
+                document.getElementById("sel6").style.display = "block";
+            }
+
+            if (this.value == "Gujarat")
+
+            {
+                document.getElementById("sel7").style.display = "block";
+            }
+            if (this.value == "Haryana")
+
+            {
+                document.getElementById("sel8").style.display = "block";
+            }
+            if (this.value == "Jammu and Kashmir")
+
+            {
+                document.getElementById("sel9").style.display = "block";
+            }
+            if (this.value == "Kerala")
+
+            {
+                document.getElementById("sel10").style.display = "block";
+            }
+            if (this.value == "Madhya Pradesh")
+
+            {
+                document.getElementById("sel11").style.display = "block";
+            }
+            if (this.value == "Maharashtra")
+
+            {
+                document.getElementById("sel12").style.display = "block";
+            }
+            if (this.value == "Rajasthan")
+
+            {
+                document.getElementById("sel13").style.display = "block";
+            }
+            if (this.value == "Uttar Pradesh")
+
+            {
+                document.getElementById("sel14").style.display = "block";
+            }
+            if (this.value == "Uttarakhand")
+
+            {
+                document.getElementById("sel15").style.display = "block";
+            }
+
+        }
+
+        function calculate() {
+            var a, b, c, d, n;
+            count++;
+
+            var id1 = "nm" + ((count).toString());
+            var id2 = "pn" + ((count).toString());
+            var id3 = "ad" + ((count).toString());
+            var id4 = "sub" + ((count).toString());
+
+            a = document.getElementById('inp1').value;
+            b = document.getElementById('inp2').value;
+            c = document.getElementById('inp3').value;
+            d = document.getElementById('inp4').value;
+            document.getElementById('inp1').value = "";
+            document.getElementById('inp2').value = "";
+            document.getElementById('inp3').value = "";
+            document.getElementById('inp4').value = "";
+            document.getElementById(id1).innerHTML = a;
+            document.getElementById(id2).innerHTML = b;
+            document.getElementById(id3).innerHTML = c;
+            document.getElementById(id4).innerHTML = d;
+
+            console.log("hey");
+            if (document.getElementById("maha").selected == "true")
+                document.getElementById("sel2").style.display = "block";
+        }
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+</body>
+
+</html>
